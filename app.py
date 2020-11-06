@@ -21,7 +21,7 @@ def gen():
             text["text"] = word.upper()
 
     except ValueError:
-        text["text"] = 'Введите числово!'
+        text["text"] = 'Введите число!'
         text["fg"] = 'red'
 
 def update():
@@ -70,5 +70,4 @@ r2 = Radiobutton(root, highlightthickness=1, highlightbackground="#141414", text
 r1.grid(row=3, column=1, sticky=E)
 r2.grid(row=3, column=2, sticky=W)
 btn = Button(root, highlightthickness=2, highlightbackground="#141414", bg="#242424", fg="white", text='Generate!', command=gen).grid(row=3, column=0, columnspan=3)
-text["fg"] = 'white'
 root.mainloop()
